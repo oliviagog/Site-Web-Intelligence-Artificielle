@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Dossier sur l'Intelligence Artificielle: L'IA, faut-il en avoir peur?</title>
+	<meta name="description" content="Dossier sur l'intelligence artificielle : l'IA, faut-il en avoir peur?">
+	<meta name="Keywords" content="intelligence artificielle,a i intelligence artificielle,l intelligence artificielle,intelligence artificielle définition,intelligence artificielle film
+,film intelligence artificielle,définition intelligence artificielle,intelligence artificielle danger,intelligence artificielle google,robot intelligence artificielle,	ia,ai,tpe intelligence artificielle,dossier intelligence artificielle,peur intelligence artificielle,IA,AI">
+	<link href="favicon.ico" rel="shortcut icon" type="ico">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="gallery.prefixed.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<meta charset="utf-8">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98124316-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-98124316-3');
+	</script>
+	
+</head>
+
+<body>
+	<!-- Animations des mains -->
+	<script>// SCRIPT "MACHINE A ECRIRE" FONCTIONNANT SUR LE TITRE DANS L'INDEX
+	function extraire() {
+		if (++ii < message.length) { // On incremente i et on compare a la taille du message.
+			// Si i ne depasse pas le nombre de caracteres dans le message
+			// Note : le premier caractere de la chaine commence a l'index 0
+			if (message[ii] == '\n') {
+				// Si saut de ligne on remplace par l'equivalent HTML : "<br/>".
+				document.getElementById("msg").innerHTML += '<br/>';
+			} else {
+				// Sinon on ajoute simplement le caractere a l'emplacement courant.
+				document.getElementById("msg").innerHTML += message[ii];
+			}
+		} else {
+			// Sinon on arrete le timer car le texte a fini de s'afficher.
+			clearTimeout(interval);
+		}
+	}
+	var ii = -1; // On incremente i en debut de fonction, il vaudra donc 0 a la premiere execution.
+	var message = "L'Intelligence Artificielle"; // Message a afficher, on utilise le caractere \n pour le retour a la ligne.
+	var interval = setInterval(extraire, 120); // On declanche le timer et on le garde dans une variable pour l'arreter plus tard.
+	</script>
+
+	<div id="animation">
+		<img class="h" src="imgs/mains/h1.png"> <img class="r" src="imgs/mains/r1.png"> <span id="msg"></span>
+	</div>
+	<!-- Menu flotant sur le cote -->
+
+
+	<div id="menu">
+		<ul>
+			<li><button><span class="circle"></span> <span class="title"><a href="index.html">Introduction</a></span></button>
+			</li>
+
+
+			<li><button><span class="circle"></span> <span class="title"><a href="chronologie-intelligence-artificielle.html">Une brève chronologie</a></span></button>
+			</li>
+
+
+			<li><button><span class="circle"></span> <span class="title"><a href="avantages-intelligence-artificielle.html">Avantages de l'IA</a></span></button>
+			</li>
+
+
+			<li><button><span class="circle"></span> <span class="title"><a href="limites-dangers-intelligence-artificielle.html">Limites et dangers de l'IA</a></span></button>
+			</li>
+
+
+			<li><button><span class="circle"></span> <span class="title"><a href="problemes-ethiques-legaux-intelligence-artificielle.html">Problèmes éthiques et légaux</a></span></button>
+			</li>
+
+
+			<li><button><span class="circle"></span> <span class="title"><a href="l-intelligence-artificielle-faut-il-en-avoir-peur.html">Conclusion</a></span></button>
+			</li>
+		</ul>
+	</div>
+	<!-- Problematique -->
+
+
+	<div class="in">
+		<h1 class="pb">L'IA, faut-il en avoir peur?</h1>
+	</div>
+	<!-- contenu de l'introduction -->
+
+
+	<div id="introduction">
+		<div class="in">
+			<div class="iut">
+			</div>
+
+
+			<p style="margin-bottom: 2%">Dans le cadre d'un projet tutoré en 1ère année de DUT Informatique à l'IUT de Calais, nous avons formé un groupe de 3 étudiants constitué de Dufour Victor, Goguillon Olivia et Vitse Maxime, qui a décidé de travailler sur le thème de l'intelligence artificielle.</p>
+			<!-- SLIDE -->
+
+
+			<div class="gallery autoplay items-3">
+				<div class="control-operator" id="item-1">
+				</div>
+
+
+				<div class="control-operator" id="item-2">
+				</div>
+
+
+				<div class="control-operator" id="item-3">
+				</div>
+
+
+				<figure class="item">
+					<h2>L'intelligence artificielle</h2>
+
+
+					<p style="position: absolute;top: 50%;transform: translateY(-50%);padding-right:2%;font-size:110%;">Aussi connue sous l'abréviation "IA", fait partie du domaine informatique. Elle consiste à doter un système informatique d'un certain degré d'intelligence afin qu'il puisse effectuer une ou plusieurs tâches de façon autonome et automatique en suivant un raisonnement logique. Il existe deux types d'IA :</p>
+				</figure>
+
+
+				<figure class="item">
+					<h2>L'IA faible</h2>
+
+
+					<p style="font-size:110%;">Elle consiste à programmer des outils numériques à l'aide d'algorithmes pour exécuter une tâche plus ou moins complexe (gagner aux échecs par exemple). C'est cette première forme d'IA qui se développe essentiellement aujourd'hui. Le superordinateur Deep Blue d'IBM qui a battu le champion d'échecs Garry Kasparov ou encore AlphaGo de Google DeepMind qui a vaincu le champion du monde de jeu de go ne sont que de simples IA faibles (cf. "Une brève chronologie"). Ces IA sont très efficaces pour remplir une tâche spécialisée.</p>
+				</figure>
+
+
+				<figure class="item">
+					<h2>L'IA forte</h2>
+
+
+					<p style="position: absolute;top: 50%;transform: translateY(-50%); padding-right:2%;font-size:110%;">Elle vise à créer des machines capables d'apprendre elles-mêmes le comportement adéquat en s'entraînant, comme un enfant qui finit par comprendre lui-même la logique d'un jeu à force d'expérience. Cette "IA forte" en est encore au stade expérimental.</p>
+				</figure>
+
+
+				<div class="controls">
+					<a class="control-button" href="#item-1">•</a> <a class="control-button" href="#item-2">•</a> <a class="control-button" href="#item-3">•</a>
+				</div>
+			</div>
+			<!-- CITATIONS -->
+			
+			<br>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Bannière -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-7947691393475660"
+			     data-ad-slot="3681503879"
+			     data-ad-format="auto"
+			     data-full-width-responsive="true"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>	
+
+			<div class="quote">
+				<span class="guillemets">&#10077;</span>
+
+				<p>Selon Franck Pengam, tous les commentateurs de l'émergence d'une IA dite forte s'accordent plus ou moins sur la supériorité de l'IA sur l'humain dans tous les domaines d'ici 30 à 200 ans. (Géopolitique Profonde n°2, Mars 2018).<br>
+				<br>
+				Puisant dans des bases de données gigantesques, des algorithmes sont déjà si complexes que certaines machines prennent des décisions que l'Homme ne peut pas expliquer à ce jour. Plus étonnant encore, certaines IA détectent lorsqu'un humain tente de modifier leur comportement et peuvent même tout faire pour s'opposer à l'acte s'il entre en conflit avec l'objectif initial de l'IA.</p>
+			</div>
+
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Bannière -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-7947691393475660"
+			     data-ad-slot="3681503879"
+			     data-ad-format="auto"
+			     data-full-width-responsive="true"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+
+			<div class="quote">
+				<span class="guillemets-2">&check;</span>
+
+				<p>Ces progrès concernant l'IA peuvent donc paraître inquiétants et nous pouvons légitimement nous demander : « L'IA, faut-il en avoir peur ? »<br>
+				<br>
+				Dans une première partie, nous présenterons les avantages de l'IA. Puis, nous évoquerons ses limites ainsi que les dangers qu'elle représente. Finalement, nous aborderons le cadre légal qu'il est nécessaire de mettre en place pour contrôler ces risques.</p>
+			</div>
+		</div>
+		<!-- BOUTON LIRE LA SUITE -->
+
+		<div class="in">
+			<div class="read">
+				<a href="chronologie-intelligence-artificielle.html">Lire la suite <span class="arrow">&#8594;</span></a>
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+
+	<div class="embedsocial-collect" data-ref="ecC0Y" style="text-align:center;"> </div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/cs.js?v=2.0"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialReviewsCollectScript"));</script>
+
+	<div class='embedsocial-reviews' data-ref="a148f4183e2ec6f729a5e9513a026fd71ce0a035"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ri.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialReviewsScript"));</script>
+
+	<div id="footer">
+		<div class="in">
+			<a href="contact.html">Contact</a> <a href="sources.html">Sources</a><br>
+			<a href="https://github.com/Weamix" target="_blank">© Projet tutoré à l'IUT de Calais en 2018 fait par Vitse Maxime avec l'aide de Goguillon Olivia</a>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,393 @@
+/*S'APPLIQUE A TOUT LE HTML*/
+
+* {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+
+/* POLICES */
+
+@font-face {
+	font-family: 'DK Face Your Fears';
+	src: url('DK Face Your Fears.ttf') format("truetype");
+}
+
+/* marges reduisant la taille du contenu affiché sur le naviguateur web */
+
+.in {
+	width: 900px;
+	margin: 0 auto;
+}
+
+body {
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+/* animation des mains (les images) + le titre */
+
+#animation {
+	margin: 0;
+	padding: 0;
+	/*height:725px;*/
+	min-height: 100vh;
+	overflow: hidden;
+	/* pour que la div timeline ne vienne pas sur la div animation */
+	position: relative;
+	/* pour pouvoir inserer du texte sur les images */
+	z-index: 1;
+	background-color: #4C5069;
+}
+
+/*TITRE FONCTIONNANT AVEC LE SCRIPT MACHINEA*/
+
+#animation #msg {
+	height: 12%;
+	width: 50%;
+	color: black;
+	position: absolute;
+	top: 50%;
+	right: 23%;
+	margin: 0 auto;
+	z-index: 2;
+	font-size: 400%;
+	color: white;
+	/*#778899*/
+}
+
+/* MAIN HUMAIN  + ANIMATION*/
+
+.h {
+	float: right;
+	z-index: 1;
+	position: relative;
+	-webkit-animation: hfromright 3s;
+	animation: hfromright 5s;
+}
+
+@-webkit-keyframes hfromright {
+	0% {
+		right: -2000px;
+		top: -2000px;
+	}
+	100% {
+		right: 0px;
+		top: 0px;
+	}
+}
+
+/* MAIN ROBOT + ANIMATION*/
+
+.r {
+	position: relative;
+	float: left;
+	z-index: 1;
+	-webkit-animation: rfromleft 3s;
+	animation: rfromleft 5s;
+}
+
+@-webkit-keyframes rfromleft {
+	from {
+		left: -2000px;
+		bottom: -2000px;
+	}
+	to {
+		left: 0px;
+		bottom: 0px;
+	}
+}
+
+#animation img {
+	width: 50%;
+	min-height: 100vh;
+}
+
+/* menu */
+
+#menu button {
+	width: 100%;
+	cursor: pointer;
+	background: none;
+	border: 0;
+	margin: 3px;
+	overflow: visible;
+}
+
+.circle {
+	display: block;
+	float: right;
+	width: 13px;
+	height: 13px;
+	background: black;
+	border-radius: 50%;
+}
+
+.title {
+	float: right;
+	margin-right: 12px;
+	font-size: 18px;
+	line-height: 13px;
+	opacity: 1;
+}
+
+.title:hover {
+	opacity: 1;
+}
+
+#menu {
+	line-height: 20px;
+	position: fixed;
+	top: 60%;
+	right: 10px;
+	z-index: 10;
+	height: :100%;
+	line-height: 10px;
+}
+
+#menu ul {
+	list-style-type: none;
+	background-color: none;
+}
+
+#menu li {
+	display: list-item;
+}
+
+#menu a {
+	text-decoration: none;
+}
+
+#menu a:link {
+	color: #778899;
+}
+
+#menu button a:hover {
+	color: #FFAA00;
+}
+
+#menu a:visited {
+	color: #778899;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+/* INTRODUCTION */
+
+#introduction p {
+	line-height: 125%;
+	font-size: 110%;
+	padding-top: 2%;
+}
+
+#introduction .in {
+	/*border-style: inset;
+  border-color:grey;
+  padding:5%;*/
+	/*border-radius: 5%;*/
+	width: 800px;
+}
+
+#introduction {
+	margin: 2%;
+}
+
+.iut {
+	background-image: url(iutlittoral-logo.png);
+	background-repeat: no-repeat;
+	width: 328px;
+	height: 140px;
+	padding: 0;
+	float: left;
+}
+
+.pb {
+	font-size: 350%;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: DK Face Your Fears;
+	color: #ff5357;
+	padding: 20px;
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0px auto;
+}
+
+#introduction .quote {
+	color: black;
+	background-color: #F1F1F1;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding: 0.01em 16px;
+}
+
+#introduction .guillemets {
+	font-size: 100px;
+	line-height: 0.6em;
+	opacity: 0.2;
+	position: relative;
+	top: 30px;
+}
+
+#introduction .guillemets-2 {
+	font-size: 80px;
+	line-height: 0.6em;
+	opacity: 0.2;
+	position: relative;
+	top: 15px;
+	left: 90%;
+}
+
+#introduction p {
+	background-color: #F1F1F1;
+	padding: 2%;
+}
+
+#introduction p .quoting {
+	/*margin-top:-40px;*/
+}
+
+.item h2 {
+	text-align: center;
+}
+
+/* BOUTON LIRE LA SUITE */
+
+.read {
+	margin: 1%;
+	position: relative;
+	left: 80%;
+}
+
+.read a {
+	text-decoration: none;
+	display: block;
+}
+
+.arrow {
+	font-size: 150%;
+}
+
+.read {
+	/* on a utilisé un css button maker*/
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+	background: -moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background: -webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background: -o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background: -ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf', GradientType=0);
+	background-color: #ededed;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	display: inline-block;
+	cursor: pointer;
+	color: #777777;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 8px 25px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.read:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+	background: -moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background: -webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background: -o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background: -ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed', GradientType=0);
+	background-color: #dfdfdf;
+}
+
+.read:active {
+	position: relative;
+	top: 1px;
+}
+
+/* FOOTER */
+
+#footer {
+	display: block;
+	position: relative;
+	z-index: 1;
+	min-height: 49px;
+	background: #4C5069;
+	line-height: 20px;
+	margin-bottom: 0%;
+}
+
+#footer a {
+	padding: 10px;
+	text-decoration: none;
+	font-size: 1em;
+	color: #fff;
+	letter-spacing: .005em;
+	text-align: center;
+}
+
+#footer .in {
+	margin: 0px auto;
+	text-align: center;
+}
+
+/* MENU TOP */
+
+.navbar {
+	display: fixed;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0.1);
+	background-color: #4C5069;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 18px 18px;
+	text-decoration: none;
+	font-size: 100%;
+}
+
+.navbar li a:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* VERSION MOBILE : NE RIEN METTRE EN DESSOUS DE LA VERSION MOBILE! */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
+	#animation #msg {
+		font-size: 270%;
+		width: auto;
+		margin: auto 0px;
+	}
+	#animation img {
+		width: 50%;
+		min-height: 10vh;
+		height: 100%;
+	}
+	#animation {
+		height: 725px;
+		min-height: 10vh;
+	}
+	#menu {
+		display: none;
+	}
+}
